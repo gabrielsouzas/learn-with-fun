@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+h2#cor {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.btn-cor {
+    width: 120px;
+    height: 170px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 18px;
+    background: gray;
+    box-shadow: 2px 2px #0000009f;
+    cursor: pointer;
+
+    transition: ease all 0.35s;
+}
+
+.btn-cor:hover {
+    box-shadow: 5px 5px #0000009f;
+}
+
+#btn-cor-a, #btn-cor-c {
+    margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}

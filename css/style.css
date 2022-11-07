@@ -17,6 +17,7 @@
 /* Colors */
 :root {
     --bg-color: #ffffff;
+    --bg-color-big: #7eb7ca88;
     --main-color: #4FA0BA;
     --text-color: #FFF;
     --text-color-big: #1976ac;
@@ -110,19 +111,53 @@ h1 {
     color: var(--text-color-big);
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 30px;
     text-shadow: 1px 1px 5px var(--text-color-big);
 }
 
 .btn {
     font-size: 26px;
     font-weight: 700;
-    margin-top: 30px;
+    /*margin-top: 30px; Parou de funcionar com o a (link) */ 
     padding: 9px 40px;
     border: none;
     border-radius: 18px;
     color: var(--text-color);
     background: var(--btn-color);
     box-shadow: 2px 2px #0000009f;
+    cursor: pointer;
+
     transition: ease all 0.35s;
 }
 
+.btn:hover {
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+    background: var(--text-color);
+    box-shadow: 5px 5px #0000009f;
+}
+
+
+/* Telas maiores */
+@media screen and (min-width: 420px) {
+    header {
+        width: 420px;
+
+        /* Centraliza o header apenas horixontalmente (eixo X) */
+        left: 50%;
+        transform: translateX(-50%);
+
+        
+    }
+    main {
+        /* Definindo uma largura e a margem para auto o proprio motor vai calcular a margem, deixando o elemento centralizado, não importando o tamanho da tela */
+        width: 420px;
+        margin: auto;
+        background-color: var(--bg-color-big);
+    }
+    footer {
+        width: 420px;
+        margin: auto;
+        background-color: var(--bg-color-big);
+    }
+}
