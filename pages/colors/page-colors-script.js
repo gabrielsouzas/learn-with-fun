@@ -57,6 +57,8 @@ function carregarCores(){
             } 
         }
 
+        ler(cor);
+
         arrayCoresRestantes.splice(indiceCorArray(cor, arrayCoresRestantes), 1);
 
         //console.log("arrayCoresRestantes: " , arrayCoresRestantes)
@@ -109,4 +111,28 @@ function clicouOk() {
     if (acertou) {
         carregarCores();
     }
+}
+
+/* Ler a cor */
+
+
+
+function ler(texto) {
+    
+    /*const speech = new SpeechSynthesisUtterance();
+    speech.text = texto;
+    speech.lang = "pt-BR";
+
+    window.speechSynthesis.speak(speech);*/
+
+    // get all voices that browser offers
+    var available_voices = window.speechSynthesis.getVoices();
+    // new SpeechSynthesisUtterance object
+    var utter = new SpeechSynthesisUtterance();
+    utter.rate = 1; //velocidade
+    utter.pitch = 1; //tom da voz
+    utter.text = texto; //texto escrito
+    utter.lang = "pt-BR";
+    utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
+    window.speechSynthesis.speak(utter);
 }
