@@ -38,14 +38,25 @@ for (let i = 0; i < arrayBtnCor.length; i++) {
     
 }
 
-
 /* Evento clique nos botões das cores */
+
+const modal = document.querySelector('.modal');
+const modalText = document.querySelector('.modal h2')
+const modalButton = document.querySelector('.modal button')
 
 function clique(event) {
     if (event.target.id == btnCorCorreta.id) {
-        alert("Acertou");
+        modalText.innerHTML = "Parabéns, você acertou!";
+        modalButton.innerHTML = "Continuar";
+        modal.style.display = 'block';
     } else {
-        alert("Errou");
+        modalText.innerHTML = "Ah, essa não é a cor correta!";
+        modalButton.innerHTML = "Tentar novamente";
+        modal.style.display = 'block';
     }
 }
 
+function clicouOk() {
+    modal.style.display = 'none';
+    
+}
