@@ -18,10 +18,11 @@ As seguintes tecnologias/ferramentas foram utilizadas para desenvolver o Learn W
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Finalização da tela inicial
-- [ ] Criação da segunda tela de cores
-- [ ] Criação da interatividade com JavaScript
-- [ ] Criação da tela de Acerto/Erro
+- [ ] Adicionar fala
+- [ ] Testes de responsividade
+- [ ] Criação da segunda tela de escolha de outros ensinos
+- [ ] Criação de uma tela para ensino de formas geométricas
+- [ ] Criação de uma tela para ensino de numerais
 
 ## ☕ Usando o LearnWithFun App
 
