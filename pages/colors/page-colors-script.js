@@ -136,3 +136,21 @@ function ler(texto) {
     utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
     window.speechSynthesis.speak(utter);
 }
+
+/* Animação clique no dinossauro */
+function dinoAnimationColors(){
+    const imgDino = document.querySelector('#dino');
+    const audio = new Audio('../../sounds/roar.mp3');
+    
+    // Toca o som do dinossauro
+    audio.play();
+    
+    //imgDino.src = "/images/dino_logo_init_medium.png";
+    imgDino.classList.add('move');
+
+    
+
+    setTimeout(() => {
+        imgDino.classList.remove('move')
+    }, 2000);
+}

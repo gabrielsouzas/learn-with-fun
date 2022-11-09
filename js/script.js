@@ -20,7 +20,11 @@ const btnComecar = document.querySelector('#btn-comecar');
 /* Animação clique no dinossauro */
 function dinoAnimation(){
     const imgDino = document.querySelector('#dino');
-
+    const audio = new Audio('sounds/roar.mp3');
+    
+    // Toca o som do dinossauro
+    audio.play();
+    
     //imgDino.src = "/images/dino_logo_init_medium.png";
     imgDino.classList.add('move');
 
