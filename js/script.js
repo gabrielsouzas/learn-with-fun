@@ -17,3 +17,14 @@ window.onscroll = () => {
 /* Botão começar */
 const btnComecar = document.querySelector('#btn-comecar');
 
+/* Animação clique no dinossauro */
+function dinoAnimation(){
+    const imgDino = document.querySelector('#dino');
+
+    //imgDino.src = "/images/dino_logo_init_medium.png";
+    imgDino.classList.add('move');
+
+    setTimeout(() => {
+        imgDino.classList.remove('move')
+    }, 2000);
+}

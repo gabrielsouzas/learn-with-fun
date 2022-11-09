@@ -42,15 +42,23 @@ header {
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     background: var(--main-color);
 }
 
 /* Navbar */
 .logo {
+    position: absolute;
     width: 80px;
     height: auto;
     padding: 1rem;
+
+    left: 0;
+}
+
+/* Classe que adiciona a animação ao dinossauro */
+.move {
+    animation: move-dino 2s ease-in-out;
 }
 
 .navbar {
@@ -140,6 +148,85 @@ h1 {
     color: var(--btn-color);
     background: var(--text-color);
     box-shadow: 5px 5px #0000009f;
+}
+
+/* Animação dinossauro */
+@keyframes move-dino{
+    0% {
+        width: 90px;
+        left: 3px;
+        top: 3px;
+    }
+    10% {
+        width: 100px;
+        left: 6px;
+        top: 6px;
+    }
+    20% {
+        width: 110px;
+        left: 9px;
+        top: 9px;
+    }
+    25% {
+        width: 120px;
+        left: 12px;
+        top: 12px;
+    }
+    30% {
+        width: 140px;
+        left: 15px;
+        top: 15px;
+    }
+    40% {
+        width: 160px;
+        left: 18px;
+        top: 18px;
+    }
+    50% {
+        width: 180px;
+        left: 19px;
+        top: 21px;
+    }
+    60% {
+        width: 200px;
+        left: 18px;
+        top: 24px;
+    }
+    70% {
+        width: 230px;
+        left: 16px;
+        top: 27px;
+    }
+    80% {
+        width: 260px;
+        left: 14px;
+        top: 30px;
+    }
+    90% {
+        width: 290px;
+        left: 12px;
+        top: 33px;
+    }
+    92% {
+        width: 350px;
+        left: 10px;
+        top: 36px;
+    }
+    94% {
+        width: 350px;
+        left: 10px;
+        top: 36px;
+    }
+    96% {
+        width: 350px;
+        left: 10px;
+        top: 36px;
+    }
+    100% {
+        width: 350px;
+        left: 10px;
+        top: 36px;
+    }
 }
 
 
