@@ -45,6 +45,25 @@
     background-repeat: no-repeat;
 }
 
+#btn-menu-alfabeto {
+    background-image: url(../../images/btn-alfabeto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#btn-menu-dinossauros {
+    background-image: url(../../images/btn-dinos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#btn-menu-formas {
+    background-image: url(../../images/btn-formas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 footer {
     display: flex;
     align-items: center;
