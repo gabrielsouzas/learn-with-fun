@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+/* Colors */
+:root {
+    --bg-color: #ffffff;
+    --bg-color-big: #7eb7ca88;
+    --main-color: #4FA0BA;
+    --text-color: #FFF;
+    --text-color-big: #1976ac;
+    --btn-color: #086b8bd5;
+}
+
+.btn-menu {
+    width: 150px;
+    height: 170px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 18px;
+    background: var(--main-color);
+    box-shadow: 2px 2px #0000009f;
+    cursor: pointer;
+
+    color: #166279d5;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Rubik Bubbles', cursive;
+    text-shadow: 1px 1px 5px white;
+
+    transition: ease all 0.35s;
+}
+
+.btn-menu:hover {
+    box-shadow: 5px 5px #0000009f;
+}
+
+#btn-menu-cores, #btn-menu-alfabeto {
+    margin-right: 15px;
+}
+
+#btn-menu-cores {
+    background-image: url(../../images/btn-cores.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
