@@ -14,15 +14,16 @@ As seguintes tecnologias/ferramentas foram utilizadas para desenvolver o Learn W
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
 
-### Ajustes e melhorias
+### Desenvolvimento
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+Lista de implementação:
 
-- [ ] Adicionar fala
-- [ ] Testes de responsividade
-- [ ] Criação da segunda tela de escolha de outros ensinos
-- [ ] Criação de uma tela para ensino de formas geométricas
-- [ ] Criação de uma tela para ensino de numerais
+- [X] Tela inicial
+- [X] Tela com o ensino das cores
+- [X] Fala
+- [ ] Tela de escolha de outros ensinos
+- [ ] Tela para ensino de formas geométricas
+- [ ] Tela para ensino de numerais
 
 ## ☕ Usando o LearnWithFun App
 
