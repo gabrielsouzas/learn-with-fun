@@ -13,7 +13,7 @@ const arrayCoresStatic = [["AMARELO", "yellow"],
                           ["VIOLETA", "violet"]
                          ];
 
-const arrayBtnCor = document.querySelectorAll(".btn-cor");
+const arrayBtnCor = document.querySelectorAll(".img-form");
 var btnCorCorreta = "";
 var arrayCoresRestantes = JSON.parse(JSON.stringify(arrayCoresStatic));
 

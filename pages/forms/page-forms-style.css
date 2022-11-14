@@ -16,7 +16,7 @@ h2#form {
     font-size: 32px;
 }
 
-.btn-form {
+.img-form {
     width: 120px;
     height: 170px;
     margin-top: 15px;
@@ -29,11 +29,11 @@ h2#form {
     transition: ease all 0.35s;
 }
 
-.btn-form:hover {
+.img-form:hover {
     box-shadow: 5px 5px #0000009f;
 }
 
-#btn-form-a, #btn-form-c {
+#img-form-a, #img-form-c {
     margin-right: 15px;
 }
 
