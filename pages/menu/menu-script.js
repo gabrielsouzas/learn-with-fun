@@ -4,7 +4,7 @@ function escolha(event) {
     if (event.target.id == "btn-menu-cores") {
         window.location.href = "../../pages/colors/page-colors.html";
     } else if (event.target.id == "btn-menu-formas"){
-        alert("Em desenvolvimento.")
+        window.location.href = "../../pages/forms/page-forms.html";
     } else if (event.target.id == "btn-menu-alfabeto"){
         alert("Em desenvolvimento.")
     } else if (event.target.id == "btn-menu-dinossauros"){

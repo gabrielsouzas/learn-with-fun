@@ -1,81 +1,81 @@
-/* Seleção aleatória da cor */
+/* Seleção aleatória da forma */
 
-const txtCor = document.querySelector('#cor');
-const arrayCoresStatic = [["AMARELO", "yellow"], 
-                          ["VERMELHO", "red"], 
-                          ["AZUL", "blue"], 
-                          ["VERDE", "green"], 
-                          ["ROSA", "pink"], 
+const txtForma = document.querySelector('#forma');
+const arrayFormasStatic = [["CIRCULO", "circle"], 
+                          ["QUADRADO", "square"], 
+                          ["RETANGULO", "rectangle"], 
+                          ["TRIANGULO", "triangle"], 
+                          /*["ROSA", "pink"], 
                           ["ROXO", "purple"], 
                           ["LARANJA", "orange"],
                           ["MARROM", "#964b00"],
                           ["CINZA", "gray"],
-                          ["VIOLETA", "violet"]
+                          ["VIOLETA", "violet"]*/
                          ];
 
-const arrayBtnCor = document.querySelectorAll(".img-form");
-var btnCorCorreta = "";
-var arrayCoresRestantes = JSON.parse(JSON.stringify(arrayCoresStatic));
+const arrayBtnForma = document.querySelectorAll(".img-form");
+var btnFormaCorreta = "";
+var arrayFormasRestantes = JSON.parse(JSON.stringify(arrayFormasStatic));
 
-function carregarCores(){
+function carregarFormas(){
 
-    if (arrayCoresRestantes.length > 0) {
-        // Copiar valores do array de cores para um array auxiliar
-        var arrayCores = JSON.parse(JSON.stringify(arrayCoresStatic));
+    if (arrayFormasRestantes.length > 0) {
+        // Copiar valores do array de formas para um array auxiliar
+        var arrayFormas = JSON.parse(JSON.stringify(arrayFormasStatic));
 
         /* Math.random(): Número aleatório entre (0-1)
         Math.random() * arr.length: Números entre (0-arrayLength)
         Math.floor(): Arredondar o resultado do número aleatorio */
-        var indice = Math.floor(Math.random() * arrayCoresRestantes.length);
-        var cor = arrayCoresRestantes[indice][0];
-        txtCor.innerHTML = cor;
+        var indice = Math.floor(Math.random() * arrayFormasRestantes.length);
+        var forma = arrayFormasRestantes[indice][0];
+        txtForma.innerHTML = forma;
 
-        /* Carregar cores nos botões */
+        /* Carregar formas nos botões */
 
-        // Indice aleatorio para o botão com a cor correta
-        var indiceBtn = Math.floor(Math.random() * arrayBtnCor.length);
+        // Indice aleatorio para o botão com a forma correta
+        var indiceBtn = Math.floor(Math.random() * arrayBtnForma.length);
 
-        // Colore o botão com a cor correta
-        arrayBtnCor[indiceBtn].style.backgroundColor = arrayCoresRestantes[indice][1];
-        btnCorCorreta = arrayBtnCor[indiceBtn];
+        // Colore o botão com a forma correta
+        arrayBtnForma[indiceBtn].src = `../../images/forms/${arrayFormasRestantes[indice][1]}.png`;
+        btnFormaCorreta = arrayBtnForma[indiceBtn];
 
-        // Remove a cor do array das cores
-        arrayCores.splice(indiceCorArray(cor, arrayCores), 1);
-        //console.log("arrayCores.indexOf(cor) " , indiceCorArray(cor, arrayCores));
+        // Remove a forma do array das formas
+        arrayFormas.splice(indiceFormaArray(forma, arrayFormas), 1);
+        //console.log("arrayFormas.indexOf(forma) " , indiceFormaArray(forma, arrayFormas));
 
         // Pinta os outros botões
-        for (let i = 0; i < arrayBtnCor.length; i++) {
+        for (let i = 0; i < arrayBtnForma.length; i++) {
             if (i != indiceBtn) {
                 
-                //console.log("arrayCores: " , arrayCores)
-                indice = Math.floor(Math.random() * arrayCores.length);
+                //console.log("arrayFormas: " , arrayFormas)
+                indice = Math.floor(Math.random() * arrayFormas.length);
                 
-                arrayBtnCor[i].style.backgroundColor = arrayCores[indice][1];  
+                arrayBtnForma[i].src = `../../images/forms/${arrayFormas[indice][1]}.png`; 
 
-                // Remove a cor já usada do array das cores
-                arrayCores.splice(indice, 1);
+                // Remove a forma já usada do array das formas
+                arrayFormas.splice(indice, 1);
             } 
         }
 
-        ler(cor);
+        ler(forma);
 
-        arrayCoresRestantes.splice(indiceCorArray(cor, arrayCoresRestantes), 1);
+        arrayFormasRestantes.splice(indiceFormaArray(forma, arrayFormasRestantes), 1);
 
-        //console.log("arrayCoresRestantes: " , arrayCoresRestantes)
+        //console.log("arrayFormasRestantes: " , arrayFormasRestantes)
     } else {
-        arrayCoresRestantes = JSON.parse(JSON.stringify(arrayCoresStatic));
+        arrayFormasRestantes = JSON.parse(JSON.stringify(arrayFormasStatic));
 
-        modalText.innerHTML = "Parabéns, você acertou todas as cores!";
+        modalText.innerHTML = "Parabéns, você acertou todas as formas!";
         modalButton.innerHTML = "Continuar";
         modal.style.display = 'block';
     }
 }
 
-carregarCores();
+carregarFormas();
 
-/* Retornar indice de uma cor de um array */
+/* Retornar indice de uma forma de um array */
 
-function indiceCorArray(color, array) {
+function indiceFormaArray(color, array) {
     for (var i = 0; i < array.length; i++) {
         if (array[i][0] == color) {
             return i;
@@ -84,7 +84,7 @@ function indiceCorArray(color, array) {
     return "";
 }
 
-/* Evento clique nos botões das cores */
+/* Evento clique nos botões das formas */
 
 const modal = document.querySelector('.modal');
 const modalText = document.querySelector('.modal h2');
@@ -92,14 +92,14 @@ const modalButton = document.querySelector('.modal button');
 var acertou = false;
 
 function clique(event) {
-    if (event.target.id == btnCorCorreta.id) {
+    if (event.target.id == btnFormaCorreta.id) {
         acertou = true;
         modalText.innerHTML = "Parabéns, você acertou!";
         modalButton.innerHTML = "Continuar";
         modal.style.display = 'block';
     } else {
         acertou = false;
-        modalText.innerHTML = "Ah, essa não é a cor correta!";
+        modalText.innerHTML = "Ah, essa não é a forma correta!";
         modalButton.innerHTML = "Tentar novamente";
         modal.style.display = 'block';
     }
@@ -109,11 +109,11 @@ function clique(event) {
 function clicouOk() {
     modal.style.display = 'none';
     if (acertou) {
-        carregarCores();
+        carregarFormas();
     }
 }
 
-/* Ler a cor */
+/* Ler a forma */
 
 
 
