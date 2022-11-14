@@ -3,8 +3,8 @@
 const txtForma = document.querySelector('#forma');
 const arrayFormasStatic = [["CIRCULO", "circle"], 
                           ["QUADRADO", "square"], 
-                          ["RETANGULO", "rectangle"], 
-                          ["TRIANGULO", "triangle"], 
+                          ["RETÂNGULO", "rectangle"], 
+                          ["TRIÂNGULO", "triangle"], 
                           /*["ROSA", "pink"], 
                           ["ROXO", "purple"], 
                           ["LARANJA", "orange"],
