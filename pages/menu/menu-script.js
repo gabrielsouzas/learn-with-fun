@@ -6,7 +6,7 @@ function escolha(event) {
     } else if (event.target.id == "btn-menu-formas"){
         window.location.href = "../../pages/forms/page-forms.html";
     } else if (event.target.id == "btn-menu-alfabeto"){
-        alert("Em desenvolvimento.")
+        window.location.href = "../../pages/alphabet/page-alphabet.html";
     } else if (event.target.id == "btn-menu-dinossauros"){
         alert("Em desenvolvimento.")
     }
