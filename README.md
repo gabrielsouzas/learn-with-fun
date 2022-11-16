@@ -21,8 +21,9 @@ Lista de implementação:
 - [X] Tela inicial
 - [X] Tela com o ensino das cores
 - [X] Fala
-- [ ] Tela de escolha de outros ensinos
-- [ ] Tela para ensino de formas geométricas
+- [X] Tela de escolha de outros ensinos
+- [X] Tela para ensino de formas geométricas
+- [ ] Tela para ensino do alfabeto
 - [ ] Tela para ensino de numerais
 
 ## ☕ Usando o LearnWithFun App
