@@ -10,10 +10,28 @@
     --btn-color: #086b8bd5;
 }
 
+h1 {
+    margin-bottom: 5px;
+}
+
+.dica {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h2#letra {
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.808);
+    width: 110px;
+
+    background: linear-gradient(90deg, rgba(255, 255, 0, 0.733), rgba(255, 166, 0, 0.733), rgba(255, 0, 0, 0.733));
+    
+    border-radius: 75% 25% 66% 34% / 34% 61% 39% 66% ;
 }
 
 .btn-letra {

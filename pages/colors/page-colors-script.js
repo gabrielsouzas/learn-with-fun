@@ -95,11 +95,13 @@ function clique(event) {
     if (event.target.id == btnCorCorreta.id) {
         acertou = true;
         modalText.innerHTML = "Parabéns, você acertou!";
+        ler("Você acertou!");
         modalButton.innerHTML = "Continuar";
         modal.style.display = 'block';
     } else {
         acertou = false;
         modalText.innerHTML = "Ah, essa não é a cor correta!";
+        ler("Tente novamente!");
         modalButton.innerHTML = "Tentar novamente";
         modal.style.display = 'block';
     }
