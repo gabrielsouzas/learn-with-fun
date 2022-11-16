@@ -13,8 +13,6 @@ const arrayDinosStatic = [["ANQUILOSSAURO", "anquilossauro"],
                           ["TRICERÁTOPS", "triceratops"]
                          ];
 
-const arrayBtnDino = document.querySelectorAll(".btn-dino");
-var btnDinoCorreta = "";
 var arrayDinosRestantes = JSON.parse(JSON.stringify(arrayDinosStatic));
 
 function carregarDino(){
@@ -32,9 +30,6 @@ function carregarDino(){
 
         /* Carregar dino na img */
         imgDinossaur.src = `../../images/dinos/${arrayDinosRestantes[indice][1]}.png`;
-
-        // Remove a dino do array dos dinos
-        //arrayDinos.splice(indiceDinoArray(dino, arrayDinos), 1);
 
         ler(dino);
 
