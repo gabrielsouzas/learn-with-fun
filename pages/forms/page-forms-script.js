@@ -1,16 +1,19 @@
 /* Seleção aleatória da forma */
 
 const txtForma = document.querySelector('#forma');
-const arrayFormasStatic = [["CIRCULO", "circle"], 
-                          ["QUADRADO", "square"], 
-                          ["RETÂNGULO", "rectangle"], 
-                          ["TRIÂNGULO", "triangle"], 
-                          /*["ROSA", "pink"], 
-                          ["ROXO", "purple"], 
-                          ["LARANJA", "orange"],
-                          ["MARROM", "#964b00"],
-                          ["CINZA", "gray"],
-                          ["VIOLETA", "violet"]*/
+const arrayFormasStatic = [["CIRCULO", "circulo"], 
+                          ["QUADRADO", "quadrado"], 
+                          ["RETÂNGULO", "retangulo"], 
+                          ["TRIÂNGULO", "triangulo"], 
+                          ["CORAÇÃO", "coracao"],
+                          ["CRUZ", "cruz"],
+                          ["CUBO", "cubo"],
+                          ["ESTRELA", "estrela"],
+                          ["SETA", "seta"],
+                          ["LOSANGO", "losango"],
+                          ["PENTÁGONO", "pentagono"],
+                          ["PIRÂMIDE", "piramide"],
+                          ["RAIO", "raio"],
                          ];
 
 const arrayBtnForma = document.querySelectorAll(".img-form");
