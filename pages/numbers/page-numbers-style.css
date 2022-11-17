@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* Colors */
+:root {
+    --bg-color: #ffffff;
+    --bg-color-big: #7eb7ca88;
+    --main-color: #4FA0BA;
+    --text-color: #FFF;
+    --text-color-big: #1976ac;
+    --btn-color: #086b8bd5;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.dica {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2#numero {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.808);
+    width: 110px;
+
+    background: linear-gradient(90deg, rgba(255, 255, 0, 0.733), rgba(255, 166, 0, 0.733), rgba(255, 0, 0, 0.733));
+    
+    border-radius: 75% 25% 66% 34% / 34% 61% 39% 66% ;
+}
+
+.btn-numero {
+    font-size: 122px;
+    font-weight: 700;
+    width: 120px;
+    height: 170px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 18px;
+    background: var(--main-color);
+    color: rgba(27, 27, 27, 0.877);
+    box-shadow: 2px 2px #0000009f;
+    cursor: pointer;
+
+    transition: ease all 0.35s;
+}
+
+.btn-numero:hover {
+    box-shadow: 5px 5px #0000009f;
+}
+
+#btn-numero-a, #btn-numero-c {
+    margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.8);
+    /*opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;*/
+  }
+
+  /*.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }*/
+
+  .modal .content {
+    background-color: #D3D3D3;
+    margin: 50% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*width: 120px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;*/
+}
+
+.modal h2{
+    margin-top: 10px;
+    text-align: center;
+    color: var(--text-color-big);
+}
+
+.modal button {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}

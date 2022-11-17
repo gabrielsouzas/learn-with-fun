@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn With Fun</title>
+
+    <!-- CSS Mobile First -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- CSS Page -->
+    <link rel="stylesheet" href="page-numbers-style.css">
+
+    <!-- Javascript -->
+    <script defer src="../../js/script.js"></script>
+    <script defer src="page-numbers-script.js"></script>
+
+    <!-- Link BoxIcons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <img onclick="dinoAnimationColors()" class="logo" id="dino" src="../../images/dino_logo_init_medium.png" alt="Logo">
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/menu/menu.html">Menu</a></li>
+            <li><a href="../../pages/colors/page-colors.html">Cores</a></li>
+            <li><a href="../../pages/forms/page-forms.html">Formas</a></li>
+            <li><a href="../../pages/alphabet/page-alphabet.html">Alfabeto</a></li>
+            <li><a href="../../pages/dinos/page-dinos.html">Dinossauros</a></li>
+            <li><a href="../../pages/numbers/page-numbers.html">Dinossauros</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <section class="home">
+            <h1>Que número é esse?</h1>
+            <div class="dica">
+                <h2 id="numero">Dica</h2>
+            </div>
+            <button onclick="clique(event)" class="btn-numero" id="btn-numero-a"></button>
+            <button onclick="clique(event)" class="btn-numero" id="btn-numero-b"></button>
+            <button onclick="clique(event)" class="btn-numero" id="btn-numero-c"></button>
+            <button onclick="clique(event)" class="btn-numero" id="btn-numero-d"></button>
+        </section>
+
+        <div class="modal">
+            <div class="content">
+                <h2></h2>
+                <button class="btn" onclick="clicouOk()"></button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <!--<span>Clique na numero correta!</span>-->
+    </footer>
+    
+    <!--<a href="https://www.freepik.com/free-vector/cute-blue-tyrannosaurus-rex_10576745.htm#query=dinossaur&position=10&from_view=search&track=sph">Image by catalyststuff</a> on Freepik-->
+
+    <!--<a href="https://storyset.com/education">Education illustrations by Storyset</a>-->
+</body>
+</html>
