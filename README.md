@@ -6,7 +6,7 @@
 
 <img src="images\prototype\proto_01.png" alt="Print 01" height="500"> <img src="images\prototype\proto_02.png" alt="Print 02" height="500"> <img src="images\prototype\proto_03.png" alt="Print 03" height="500">
 
-> Este App tem como objetivo ensinar cores para crianças.
+> Este App tem como objetivo ensinar cores, formas geométricas, letras e numerais para crianças.
 
 ## 🚀 Técnologias utilizadas
 
@@ -23,7 +23,7 @@ Lista de implementação:
 - [X] Fala
 - [X] Tela de escolha de outros ensinos
 - [X] Tela para ensino de formas geométricas
-- [ ] Tela para ensino do alfabeto
+- [X] Tela para ensino do alfabeto
 - [ ] Tela para ensino de numerais
 
 ## ☕ Usando o LearnWithFun App
