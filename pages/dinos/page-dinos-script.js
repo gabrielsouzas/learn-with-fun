@@ -2,15 +2,21 @@
 
 const txtDino = document.querySelector('#nome-dino');
 const imgDinossaur = document.querySelector('#img-dino')
-const arrayDinosStatic = [["ANQUILOSSAURO", "anquilossauro"], 
-                          ["BRAQUIOSSAURO", "braquiossauro"], 
-                          ["BRAQUIOSSAURO BEBÊ", "braquiossauro-bebe"], 
-                          ["ESPINOSSAURO", "espinossauro"], 
-                          ["ESTEGOSSAURO", "estegossauro"], 
+const arrayDinosStatic = [ /*["BRAQUIOSSAURO", "braquiossauro"],
+                          ["BRAQUIOSSAURO BEBÊ", "braquiossauro-bebe"],
                           ["PARASSAUROLOFO", "parassaurolofo"], 
-                          ["PTEROSSAURO", "pterossauro"],
+                          ["PTEROSSAURO", "pterossauro"],*/
+                          ["ANQUILOSSAURO", "anquilossauro"],
+                          ["APATOSSAURO", "apatossauro"],
+                          ["ESPINOSSAURO", "espinossauro"], 
+                          ["ESTEGOSSAURO", "estegossauro"],
+                          ["MAMUTE", "mamute"],
+                          ["PLESIOSAURIA", "plesiosauria"],
+                          ["PTERODÁCTILO", "pterodactilo"],
                           ["TIRANOSSAURO", "tiranossauro-rex"],
-                          ["TRICERÁTOPS", "triceratops"]
+                          ["TRICERÁTOPS", "triceratops"],
+                          ["TROODONTE", "troodonte"],
+                          ["VELOCIRAPTOR", "velociraptor"]
                          ];
 
 var arrayDinosRestantes = JSON.parse(JSON.stringify(arrayDinosStatic));
