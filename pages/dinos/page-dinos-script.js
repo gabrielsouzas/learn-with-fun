@@ -78,7 +78,7 @@ function ler(texto) {
     utter.pitch = 1; //tom da voz
     utter.text = texto; //texto escrito
     utter.lang = "pt-BR";
-    utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
+    utter.voice = available_voices[1]; // qual sera a voz mudar de [0] até [20] para testar
     window.speechSynthesis.speak(utter);
 }
 
