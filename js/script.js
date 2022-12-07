@@ -30,5 +30,5 @@ function dinoAnimation(){
 
     setTimeout(() => {
         imgDino.classList.remove('move')
-    }, 2000);
+    }, 5500);
 }

@@ -158,5 +158,5 @@ function dinoAnimationColors(){
 
     setTimeout(() => {
         imgDino.classList.remove('move')
-    }, 2000);
+    }, 5500);
 }

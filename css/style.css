@@ -58,7 +58,8 @@ header {
 
 /* Classe que adiciona a animação ao dinossauro */
 .move {
-    animation: move-dino 2s ease-in-out;
+    /*animation: move-dino 1s ease-in-out;*/
+    animation: move-dino 5.5s ease 0s 1 normal forwards;
 }
 
 .navbar {
