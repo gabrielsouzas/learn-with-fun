@@ -76,9 +76,9 @@ function ler(texto) {
     var utter = new SpeechSynthesisUtterance();
     utter.rate = 1; //velocidade
     utter.pitch = 1; //tom da voz
-    utter.text = texto; //texto escrito
+    utter.text = texto[0].toUpperCase() + texto.substring(1).toLowerCase(); //texto (Primeira letra em maiuscula e o restante minuscula)
     utter.lang = "pt-BR";
-    utter.voice = available_voices[1]; // qual sera a voz mudar de [0] até [20] para testar
+    utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
     window.speechSynthesis.speak(utter);
 }
 
