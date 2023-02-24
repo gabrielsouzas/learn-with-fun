@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Bomberman;
+    src: url(../../font/bomberman_font.TTF)
+}
+
 /* Colors */
 :root {
     --bg-color: #ffffff;
@@ -37,17 +42,44 @@ h2#nome {
     margin-right: 15px;
 }
 
+.letras {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.letra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.letras span {
+    padding: 2px;
+    font-size: 68px;
+    font-weight: bold;
+    font-family: Bomberman, sans-serif;
+    color: var(--text-color-big);
+    cursor: pointer;
+    text-shadow: 3px 5px 2px #47474788;
+}
+
+.letras span:hover {
+    transform: translate(-3px, -3px);
+    text-shadow: 6px 8px 4px #47474788;
+    transition: transform .4s, text-shadow .4s;
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-span {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 26px;
-    font-weight: bold;
 }
 
 /* Modal */

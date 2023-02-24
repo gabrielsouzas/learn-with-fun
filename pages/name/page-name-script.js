@@ -11,31 +11,19 @@ var arrayCoresRestantes = JSON.parse(JSON.stringify(arrayLetrasStatic));
 // Cria um elemento html
 const createElement = (tag, innerText = '', innerHTML = '', className = '') => {
     const element = document.createElement(tag);
-    
-    if (innerText) {
-        element.innerText = innerText;
-    }
-
-    if (innerHTML) {
-        element.innerHTML = innerHTML;
-    }
-
-    if (className) {
-        element.classList.add(className)
-    }
-
+    if (innerText) { element.innerText = innerText; }
+    if (innerHTML) {  element.innerHTML = innerHTML; }
+    if (className) { element.classList.add(className) }
     return element;
 }
 
 function carregarLetras(){
     const divLetras = document.querySelector('.letras');
-
     arrayLetrasStatic.forEach(element => {
-        console.log(element)
+        let div = createElement('div', '', `<span>${element}</span>`, 'letra');
+        divLetras.appendChild(div)
     });
-    
 }
-
 carregarLetras();
 
 /* Retornar indice de uma cor de um array */
