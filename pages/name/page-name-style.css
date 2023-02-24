@@ -18,7 +18,15 @@
 h2#nome {
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: #0a5580;
+    font-family: Bomberman, sans-serif;
+    text-shadow: 2px 3px 3px #47474788;
+}
+
+h2#nome:hover {
+    cursor: pointer;
 }
 
 .btn-nome {

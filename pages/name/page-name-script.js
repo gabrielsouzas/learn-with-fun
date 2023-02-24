@@ -17,44 +17,50 @@ const createElement = (tag, innerText = '', innerHTML = '', className = '') => {
     return element;
 }
 
+function clique({target}) {
+    if (txtNome.innerHTML == '?') {
+        txtNome.innerHTML = ''
+    }
+    txtNome.innerHTML += target.innerHTML;
+    ler(txtNome.innerHTML)
+}
+
+function removerLetra() {
+    if (!(txtNome.innerHTML == '?')) {
+        txtNome.innerHTML = txtNome.innerHTML.substring(0, txtNome.innerHTML.length - 1);
+        
+        if (txtNome.innerHTML.length < 1) {
+            txtNome.innerHTML = '?'
+        } else {
+            ler(txtNome.innerHTML)
+        }
+    }
+}
+
+txtNome.addEventListener('click', removerLetra)
+
 function carregarLetras(){
     const divLetras = document.querySelector('.letras');
     arrayLetrasStatic.forEach(element => {
-        let div = createElement('div', '', `<span>${element}</span>`, 'letra');
+        let div = createElement('div', '', `<span onclick="clique(event)">${element}</span>`, 'letra');
         divLetras.appendChild(div)
     });
 }
+
 carregarLetras();
 
-/* Retornar indice de uma cor de um array */
-
-function indiceCorArray(color, array) {
-    for (var i = 0; i < array.length; i++) {
-        if (array[i][0] == color) {
-            return i;
-        }
-    }
-    return "";
-}
 
 
 /* Ler a letra e o nome*/
 
 function ler(texto) {
-    
-    /*const speech = new SpeechSynthesisUtterance();
-    speech.text = texto;
-    speech.lang = "pt-BR";
-
-    window.speechSynthesis.speak(speech);*/
-
     // get all voices that browser offers
     var available_voices = window.speechSynthesis.getVoices();
     // new SpeechSynthesisUtterance object
     var utter = new SpeechSynthesisUtterance();
     utter.rate = 1; //velocidade
     utter.pitch = 1; //tom da voz
-    utter.text = texto; //texto escrito
+    utter.text = texto[0].toUpperCase() + texto.substring(1).toLowerCase(); //texto (Primeira letra em maiuscula e o restante minuscula)
     utter.lang = "pt-BR";
     utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
     window.speechSynthesis.speak(utter);
