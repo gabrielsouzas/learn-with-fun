@@ -18,10 +18,11 @@
 h2#nome {
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 42px;
-    letter-spacing: 4px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
     color: #0a5580;
-    font-family: Bomberman, sans-serif;
+    font-weight: 100;
+    font-family: 'Rubik Mono One', sans-serif;
     text-shadow: 2px 3px 3px #47474788;
 }
 
@@ -56,8 +57,10 @@ h2#nome:hover {
     padding-bottom: 5px;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    align-content: normal;
     justify-content: center;
+    max-height: 450px;
+    overflow-y: scroll;
 }
 
 .letra {
@@ -69,10 +72,10 @@ h2#nome:hover {
 }
 
 .letras span {
-    padding: 2px;
-    font-size: 68px;
-    font-weight: bold;
-    font-family: Bomberman, sans-serif;
+    padding: 1px;
+    font-size: 3.3rem;
+    font-weight: 100;
+    font-family: 'Rubik Mono One', sans-serif;
     color: var(--text-color-big);
     cursor: pointer;
     text-shadow: 3px 5px 2px #47474788;
@@ -141,4 +144,15 @@ footer {
 .modal button {
     margin-top: 18px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 420px) {
+    h2#nome { font-size: 2.5rem; }
+}
+
+@media (max-width: 320px) {
+    h2#nome { font-size: 1.8rem; }
+}
+@media (max-width: 260px) {
+    h2#nome { font-size: 1.3rem; }
 }
