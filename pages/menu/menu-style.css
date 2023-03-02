@@ -12,6 +12,30 @@
     --btn-color: #086b8bd5;
 }
 
+.pages-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages-menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.pages-menu span {
+    color: var(--text-color-big);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12pt;
+}
+
 .btn-menu {
     width: 150px;
     height: 170px;
@@ -59,6 +83,13 @@
 
 #btn-menu-formas {
     background-image: url(../../images/btn-formas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#btn-menu-name {
+    background-image: url(../../images/btn-name.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

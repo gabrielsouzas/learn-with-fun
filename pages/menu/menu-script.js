@@ -9,6 +9,8 @@ function escolha(event) {
         window.location.href = "../../pages/alphabet/page-alphabet.html";
     } else if (event.target.id == "btn-menu-dinossauros"){
         window.location.href = "../../pages/dinos/page-dinos.html";
+    } else if (event.target.id == "btn-menu-name"){
+        window.location.href = "../../pages/name/page-name.html";
     }
 }
 
