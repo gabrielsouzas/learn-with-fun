@@ -14,6 +14,26 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* SEGUNDA VERSÃO (NÍVEL FÁCIL) */
+
+span {
+    font-size: 13rem;
+    font-weight: 100;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--text-color-big);
+    cursor: pointer;
+    text-shadow: 3px 5px 2px #47474788;
+}
+
+span:hover {
+    transform: translate(-3px, -3px);
+    text-shadow: 6px 8px 4px #47474788;
+    transition: transform .4s, text-shadow .4s;
+}
+
+/* PRIMEIRA VERSÃO (SERÁ ADICIONADA COMO NÍVEL DIFICIL POSTERIORMENTE) */
+
+/*
 .dica {
     margin: 0;
     padding: 0;
@@ -56,7 +76,7 @@ h2#numero {
 
 #btn-numero-a, #btn-numero-c {
     margin-right: 15px;
-}
+}*/
 
 footer {
     display: flex;
@@ -64,15 +84,17 @@ footer {
     justify-content: center;
 }
 
+/*
 span {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 26px;
     font-weight: bold;
-}
+}*/
 
 /* Modal */
 
+/*
 .modal {
     display: none;
     position: fixed;
@@ -83,17 +105,7 @@ span {
     height: 100%;
     overflow: auto;
     background: rgba(0,0,0,0.8);
-    /*opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;*/
   }
-
-  /*.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-  }*/
 
   .modal .content {
     background-color: #D3D3D3;
@@ -105,12 +117,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /*width: 120px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;*/
 }
 
 .modal h2{
@@ -122,4 +128,4 @@ span {
 .modal button {
     margin-top: 18px;
     margin-bottom: 10px;
-}
+}*/

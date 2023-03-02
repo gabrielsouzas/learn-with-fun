@@ -1,5 +1,5 @@
 /* Seleção aleatória do número */
-
+/*
 const txtNumero = document.querySelector('#numero');
 const arrayNumerosStatic = [ "0",  "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8",  "9",
                             "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
@@ -11,7 +11,7 @@ const arrayNumerosStatic = [ "0",  "1",  "2",  "3",  "4",  "5",  "6",  "7",  "8"
                             "70", "71", "72", "73", "74", "75", "76", "77", "78", "79",
                             "80", "81", "82", "83", "84", "85", "86", "87", "88", "89",
                             "90", "91", "92", "93", "94", "95", "96", "97", "98", "99",
-                            "100",*/
+                            "100",*//*
                            ];
 
 const arrayBtnNumero = document.querySelectorAll(".btn-numero");
@@ -27,12 +27,12 @@ function carregarNumeros(){
 
         /* Math.random(): Número aleatório entre (0-1)
         Math.random() * arr.length: Números entre (0-arrayLength)
-        Math.floor(): Arredondar o resultado do número aleatorio */
+        Math.floor(): Arredondar o resultado do número aleatorio *//*
         var indice = Math.floor(Math.random() * arrayNumerosRestantes.length);
         numero = arrayNumerosRestantes[indice];
         //txtNumero.innerHTML = "?";
 
-        /* Carregar numeros nos botões */
+        /* Carregar numeros nos botões *//*
 
         // Indice aleatorio para o botão com o número correto
         var indiceBtn = Math.floor(Math.random() * arrayBtnNumero.length);
@@ -77,7 +77,7 @@ txtNumero.addEventListener('click', () => {
     ler(numero);
 });
 
-/* Retornar indice de umo número de um array */
+/* Retornar indice de umo número de um array *//*
 
 function indiceNumeroArray(color, array) {
     for (var i = 0; i < array.length; i++) {
@@ -88,7 +88,7 @@ function indiceNumeroArray(color, array) {
     return "";
 }
 
-/* Evento clique nos botões dos números */
+/* Evento clique nos botões dos números *//*
 
 const modal = document.querySelector('.modal');
 const modalText = document.querySelector('.modal h2');
@@ -117,27 +117,27 @@ function clicouOk() {
     if (acertou) {
         carregarNumeros();
     }
-}
+}*/
+
+/* SEGUNDA VERSÃO */
+
+const number = document.querySelector('.number');
+
+ler(number.innerHTML);
+
+// Evento clique no número
+number.addEventListener('click', ({target}) => {
+    target.innerHTML = Number(target.innerHTML) + 1;
+    ler(target.innerHTML);
+});
 
 /* Ler o número */
-
-
-
 function ler(texto) {
-    
-    /*const speech = new SpeechSynthesisUtterance();
-    speech.text = texto;
-    speech.lang = "pt-BR";
-
-    window.speechSynthesis.speak(speech);*/
-
-    // get all voices that browser offers
     var available_voices = window.speechSynthesis.getVoices();
-    // new SpeechSynthesisUtterance object
     var utter = new SpeechSynthesisUtterance();
     utter.rate = 1; //velocidade
     utter.pitch = 1; //tom da voz
-    utter.text = texto; //texto escrito
+    utter.text = texto[0].toUpperCase() + texto.substring(1).toLowerCase(); //texto (Primeira letra em maiuscula e o restante minuscula)
     utter.lang = "pt-BR";
     utter.voice = available_voices[0]; // qual sera a voz mudar de [0] até [20] para testar
     window.speechSynthesis.speak(utter);
