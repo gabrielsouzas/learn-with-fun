@@ -59,7 +59,7 @@
     box-shadow: 5px 5px #0000009f;
 }
 
-#btn-menu-cores, #btn-menu-alfabeto {
+#btn-menu-cores, #btn-menu-alfabeto, #btn-menu-numeros {
     margin-right: 15px;
 }
 
@@ -83,6 +83,13 @@
 
 #btn-menu-formas {
     background-image: url(../../images/btn-formas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#btn-menu-numeros {
+    background-image: url(../../images/btn-numeros.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
