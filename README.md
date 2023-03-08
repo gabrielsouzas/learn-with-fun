@@ -8,13 +8,13 @@
 
 > Este App tem como objetivo ensinar cores, formas geométricas, letras e numerais para crianças.
 
-## 🚀 Técnologias utilizadas
+## 💻 Técnologias utilizadas
 
 As seguintes tecnologias/ferramentas foram utilizadas para desenvolver o LearnWithFunApp:
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
 
-### Desenvolvimento
+### ⌛ Desenvolvimento
 
 Lista de implementação:
 
@@ -24,9 +24,9 @@ Lista de implementação:
 - [X] Tela de escolha de outros ensinos
 - [X] Tela para ensino de formas geométricas
 - [X] Tela para ensino do alfabeto
-- [ ] Tela para ensino de numerais
+- [X] Tela para ensino de numerais
 
-## ☕ Usando o LearnWithFun App
+## 📱 Usando o LearnWithFun App
 
 Acesse o LearnWithFun App pelo GitHub Pages no link: [LearnWithFun App](https://gabrielsouzas.github.io/learn-with-fun/)
 
