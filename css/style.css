@@ -156,6 +156,12 @@ h1 {
     box-shadow: 5px 5px #0000009f;
 }
 
+/* Referencia da animação da tela inicial */
+/*.reference {
+    color: #1976ac;
+    text-align: center;
+}*/
+
 /* Animação dinossauro */
 @keyframes move-dino{
     0% {
@@ -238,6 +244,9 @@ h1 {
 
 /* Telas maiores */
 @media screen and (min-width: 420px) {
+    body {
+        background: rgba(174, 216, 230, 0.644);
+    }
     header {
         width: 420px;
 

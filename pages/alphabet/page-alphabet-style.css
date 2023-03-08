@@ -12,7 +12,29 @@
 
 h1 {
     margin-bottom: 5px;
+    padding-bottom: 35px;
 }
+
+/* SEGUNDA VERSÃO (NÍVEL FÁCIL) */
+
+span {
+    font-size: 15rem;
+    font-weight: 100;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: var(--text-color-big);
+    cursor: pointer;
+    text-shadow: 3px 5px 2px #47474788;
+}
+
+span:hover {
+    transform: translate(-3px, -3px);
+    text-shadow: 6px 8px 4px #47474788;
+    transition: transform .4s, text-shadow .4s;
+}
+
+/* PRIMEIRA VERSÃO (SERÁ ADICIONADA COMO NÍVEL DIFICIL POSTERIORMENTE) */
+
+/*
 
 .dica {
     margin: 0;
@@ -71,7 +93,7 @@ span {
     font-weight: bold;
 }
 
-/* Modal */
+/* Modal *//*
 
 .modal {
     display: none;
@@ -83,17 +105,7 @@ span {
     height: 100%;
     overflow: auto;
     background: rgba(0,0,0,0.8);
-    /*opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;*/
   }
-
-  /*.modal:target {
-    opacity: 1;
-    pointer-events: auto;
-  }*/
 
   .modal .content {
     background-color: #D3D3D3;
@@ -105,12 +117,6 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /*width: 120px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;*/
 }
 
 .modal h2{

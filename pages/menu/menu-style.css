@@ -12,6 +12,10 @@
     --btn-color: #086b8bd5;
 }
 
+.home {
+    height: 100%;
+}
+
 .pages-menu {
     display: flex;
     flex-direction: row;
