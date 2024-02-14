@@ -3,9 +3,6 @@
 const txtDino = document.querySelector('#nome-dino');
 const imgDinossaur = document.querySelector('#img-dino');
 const arrayDinosStatic = [
-  /*["BRAQUIOSSAURO", "braquiossauro"],
-                          ["BRAQUIOSSAURO BEBÊ", "braquiossauro-bebe"],
-                          ["PTEROSSAURO", "pterossauro"],*/
   ['ANQUILOSSAURO', 'anquilossauro'],
   ['APATOSSAURO', 'apatossauro'],
   ['ESPINOSSAURO', 'espinossauro'],
